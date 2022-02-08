@@ -1,0 +1,162 @@
+<!-- Playlist and site made by VocalNutria9174
+[https://github.com/VocalNutria9174/epic-site] -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mixtape By: VocalNutria9174</title>
+  <link rel="icon" href="https://icons.iconarchive.com/icons/flat-icons.com/flat/512/Boombox-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="VocalNutria9174's Mixtape!">
+  <meta name="author" content="VocalNutria9174">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="startTime();">
+    
+    <!-- Window code -->
+    <div class="window" style="width: 732.8px">
+  <div class="title-bar">
+    <div class="title-bar-text">My Mixtape - VocalNutria9174</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+<iframe width="100%" height="498.5" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1392304228&color=%2300cc11&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-776369183" title="VocalNutria9174" target="_blank" style="color: #cccccc; text-decoration: none;">VocalNutria9174</a> · <a href="https://soundcloud.com/user-776369183/sets/my-mixtape" title="My Mixtape" target="_blank" style="color: #cccccc; text-decoration: none;">My Mixtape</a></div>
+  </div>
+   <div class="status-bar">
+    <p class="status-bar-field">Soundcloud</p>
+    <p class="status-bar-field">My Mixtape</p>
+    <p class="status-bar-field">Made By: VocalNutria9174</p>
+  </div>
+</div>
+
+<!-- Taskbar code -->
+<div class="window" id="taskbar">
+  <div id="start">
+    <button class="startbtn" id="start"><img src="https://win98icons.alexmeub.com/icons/png/windows-0.png"/><span>Start</span></button>
+  </div>
+    <div id="items">
+      <button class="tbtab active" id="welcometab"><span>My Mixtape - VocalNutria9174</span></button>
+  </div>
+    <div id="time">
+<div id="time-s">00:00:00</div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time-s').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+  </div>
+</div>
+<style>
+body {
+  background-color: #008080;
+}
+#taskbar{
+  width:100%;
+  text-align:left;
+  position:fixed;
+  bottom:0;
+  left:0;
+  margin-bottom:0px!important;
+  z-index:200;
+}
+#start, #items{
+  display:inline-block;
+  vertical-align:top
+}
+#start button, #items button {
+  min-height:25px;
+  max-height:25px;
+}
+#items button {
+    padding: 2px 11px 0 13px;
+}
+#items button.active{
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+.startbtn span{
+  font-weight:700;
+  font-size:13px;
+  line-height:23px;
+}
+.startbtn img{
+  max-height:23px;
+padding-right: 5px;
+      margin-bottom: -5px;
+}
+.startbtn:active{
+   max-height:25px!important;
+}
+.ui-menu {
+  width:200px;
+  bottom:29px;
+  left:0;
+  min-height:227px;
+  position:fixed;
+    z-index:199;
+      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+    padding: 3px;
+  padding-left: 40px;
+}
+.ui-menu:before {
+    content: "Windows 98 - Special Web Edition";
+    background: linear-gradient(90deg,navy,#1084d0);
+    transform: rotate(-90deg);
+    position: absolute;
+    display: block;
+    padding: 15px;
+    line-height: 2px;
+    color: white;
+    bottom: 99px;
+    width: 200px;
+    left: -100px;
+}
+.ui-menu-item-wrapper {
+  padding-left: 25px!important;
+}
+
+#time {
+  float:right;
+  line-height:23px;
+  font-size:12px;
+  font-weight:700;
+  padding-right:10px;
+  padding-left:10px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+</style>
+  <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time-s').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</body>
+</html>
